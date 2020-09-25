@@ -1,0 +1,260 @@
+body{
+    font-style: italic;
+    background-image: linear-gradient(-90deg, rgba(27, 103, 132, 0.92), rgba(1, 10, 31, 0.88));
+}
+
+header{
+width: auto;
+min-height: 80px;
+margin-left: 10px;
+margin-right: 10px;
+font-weight: bold;
+font-size: 12px;
+color: white;
+padding-top: 5px;
+padding-bottom: 5px;
+background: rgba(36, 32, 1, 0.486);
+border-radius: 1vw;
+}
+header li {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0;
+    
+}
+header .headerLeft {
+    float: left;
+}
+header .headerMid {
+    float: left;
+    margin-left: 50px;
+}
+header .headerRight {
+    float: right;
+    margin-right: 30px;
+    text-align: center;
+}
+header .headerRight p {
+    margin-bottom: 5px;
+}
+
+nav
+{
+    min-height: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#fixNav{
+    float: right;
+    position: fixed; /*Cho menu cố định 1 vị trí với top và left*/
+    top: 0; /*Nằm trên cùng*/
+    z-index: 100000; /*Hiển thị lớp trên cùng*/
+    margin-left: 20.7vw;
+    color: white;
+  }
+
+.logo img {
+    width: 120px;
+    height: 100px;
+    float: left;
+    margin-left: 12vw;
+    margin-bottom: 10px;
+}
+.banner {
+    clear: both;
+}
+.banner img {
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+main{
+    margin-top: 5px;
+    min-height: 100px;
+}
+main .mainLeft{
+    float: left;
+    min-width: 10px;
+    min-height: 100px;
+}
+main .mainLeft .vertical-menu {
+    width: 200px; /* Set a width if you like */
+  }
+  
+main .mainLeft .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+main .mainLeft .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+main .mainLeft .vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+main .mainRight{
+    float: left;
+    min-height: inherit;
+    width: 65vw;
+    margin: 0 10px 0 10px;
+    margin-bottom: 1vw;
+} 
+.thumb {
+    position: relative;
+    display: block;
+    width: 290px;
+    height: 200px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0;
+}
+
+
+footer{
+    clear: both;
+    min-height: 300px;
+    background: rgba(36, 32, 1, 0.486);
+    border-radius: 1vw;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1vw;
+}
+
+
+/* -------------Đăng Nhập------------ */
+        .card{
+            height: 370px;
+            margin-top: auto;
+            margin-bottom: auto;
+            width: 400px;
+            background-color: rgba(0,0,0,0.5) !important;
+            }
+            
+            .social_icon span{
+            font-size: 60px;
+            margin-left: 10px;
+            color: #FFC312;
+            }
+            
+            .social_icon span:hover{
+            color: white;
+            cursor: pointer;
+            }
+            
+            .card-header h3{
+                color: white;
+                margin-top:2vw;
+            }
+            
+            .social_icon{
+            position: absolute;
+            right: 20px;
+            top: -45px;
+            }
+            
+            .input-group-prepend span{
+            width: 50px;
+            background-color: #FFC312;
+            color: black;
+            border:0 !important;
+            }
+            
+            input:focus{
+            outline: 0 0 0 0  !important;
+            box-shadow: 0 0 0 0 !important;
+            
+            }
+            
+            .remember{
+            color: white;
+            }
+            
+            .remember input
+            {
+            width: 20px;
+            height: 20px;
+            margin-left: 15px;
+            margin-right: 5px;
+            }
+            
+            .login_btn{
+            color: black;
+            background-color: #FFC312;
+            width: 100px;
+            }
+            
+            .login_btn:hover{
+            color: black;
+            background-color: white;
+            }
+            
+            .links{
+            color: white;
+            }
+            
+            .links a{
+            margin-left: 4px;
+            }
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+            
+        @-webkit-keyframes animatezoom {
+            from {-webkit-transform: scale(0)} 
+            to {-webkit-transform: scale(1)}
+        }
+            
+        @keyframes animatezoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+            display: block;
+            float: none;
+            }
+        }
+            .modal-content {
+                background-color: #0000009a;
+                margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid rgba(0, 0, 0, 0.534);
+                width: 80%; /* Could be more or less, depending on screen size */
+                padding-top: 5vw;
+                padding-bottom: 8vw;
+            }
+            /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 999999; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+/* -------------Đăng Nhập------------ */
+
+

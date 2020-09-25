@@ -1,0 +1,133 @@
+<body>
+    <header>
+        <div class="headerLeft">
+            <li>Địa Chỉ: Cam Thành Bắc - Cam Lâm - Khánh Hòa.</li>
+            <li>SĐT: 0367481692.</li>
+        </div>
+        <div class="headerMid">
+            <li>
+                Chuyên: Đồ Điện Dân Dụng.
+            </li>
+            <li>Sửa Chữa & Buôn Bán: Các loại đồ điện.</li>
+        </div>
+        <div class="headerRight">
+            <p>Tài Khoản Của Bạn?</p>
+            <button onclick="document.getElementById('Login').style.display='block'" style="width:auto;"
+                type="button" class="btn btn-info">Đăng Nhập</button>
+            
+            <div id="Login" class="modal">
+                
+                <form class="modal-content animate" action="../PHP/login.php" method="POST">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="logo">
+                                    <img style="float:left; width: 100px; height: 80px; margin-left: 1vw;" src="../Public/img/logo.png" alt="logo">
+                                </div>
+                                <h3>Đăng Nhập</h3>
+                                <div class="d-flex justify-content-end social_icon">
+                                    <span><i class="fab fa-facebook-square"></i></span>
+                                    <span><i class="fab fa-google-plus-square"></i></span>
+                                    <span><i class="fab fa-twitter-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body" style="clear: both;">
+                                <form>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Tên Đăng Nhập (Email)" name="email">
+
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Mật Khẩu" name="password">
+                                    </div>
+                                    <div class="row align-items-center remember">
+                                        <input type="checkbox">Ghi nhớ khi đăng nhập!
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Gửi" class="btn float-right login_btn" name="submit">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-center">
+                                    <a href="#">Quên Mật Khẩu?</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            </form>
+
+            <button onclick="document.getElementById('Register').style.display='block'" style="width:auto;"
+                type="button" class="btn btn-info">Đăng Ký</button>
+
+            <div id="Register" class="modal">
+                <form class="modal-content animate" action="../PHP/register.php" method="POST">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="logo">
+                                    <img style="float:left; width: 100px; height: 80px; margin-left: 1vw;" src="../Public/img/logo.png" alt="logo">
+                                </div>
+                                <h3>Đăng Ký</h3>
+                                <div class="d-flex justify-content-end social_icon">
+                                    <span><i class="fab fa-facebook-square"></i></span>
+                                    <span><i class="fab fa-google-plus-square"></i></span>
+                                    <span><i class="fab fa-twitter-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Tên Đăng Nhập (Email)" name='email'>
+
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Mật Khẩu" name='password'>
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="Nhập Lại Mật Khẩu" name='repassword'>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Gửi" class="btn float-right login_btn" name='submit'>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById('Login');
+                var modal1 = document.getElementById('Register');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal || event.target == modal1 ) {
+                        modal.style.display = "none";
+                        modal1.style.display = "none";
+                    }
+                }
+            </script>
+
+        </div>
+    </header>
